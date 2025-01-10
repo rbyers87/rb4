@@ -1,19 +1,21 @@
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('app-cache').then(cache => {
+    caches.open('app-cache').then((cache) => {
       return cache.addAll([
         '/',
         '/index.html',
-        '/icons/apple-icon-180x180.png',
-        // Add other files you want to cache here
+        '/styles.css',
+        '/script.js',
+        '/icons/icon-192x192.png',
+        '/icons/icon-512x512.png'
       ]);
     })
   );
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then(response => {
+    caches.match(event.request).then((response) => {
       return response || fetch(event.request);
     })
   );
