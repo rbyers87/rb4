@@ -14,7 +14,6 @@ import React from 'react';
     
     function App() {
       return (
-           <div className="bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText">
         <Router>
           <AuthProvider>
             <div className="min-h-screen bg-gray-100">
