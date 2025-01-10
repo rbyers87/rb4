@@ -36,5 +36,19 @@
     <script type="module" src="/src/main.tsx"></script>
       <script src="/main.js"></script>
   <!-- Other body content -->
+  function applyDarkMode() {
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+  } else {
+    document.body.classList.remove('dark-mode');
+  }
+}
+
+// Initial check
+applyDarkMode();
+
+// Listen for system preference changes
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyDarkMode);
   </body>
 </html>
