@@ -5,7 +5,7 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#000000" // Dark mode theme
   "icons": [
     {
       "src": "/icons/apple-icon-180x180.png",
