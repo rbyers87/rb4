@@ -1,6 +1,6 @@
 {
   "name": "Workout Tracker",
-  "short_name": "Web App",
+  "short_name": "WorkOut",
   "description": "Description of your app",
   "start_url": "/",
   "display": "standalone",
