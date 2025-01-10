@@ -1,115 +1,18 @@
-/* Tailwind CSS Directives */
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind components;
+    @tailwind utilities;
 
-/* Media queries for container padding */
-@media (max-width: 768px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
+    @media (max-width: 768px) {
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
 
-@media (max-width: 640px) {
-  .container {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-}
-
-/* Custom Global Styles */
-
-/* Reset styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Root variables for colors and reusable properties */
-:root {
-  --primary-color: #3498db; /* Light blue */
-  --secondary-color: #2ecc71; /* Green */
-  --background-dark: #121212; /* Dark mode background */
-  --text-light: #ffffff; /* Text for dark mode */
-  --text-dark: #000000; /* Text for light mode */
-  --border-radius: 5px;
-  --transition-speed: 0.3s;
-}
-
-/* General body styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--primary-color); /* Default light mode */
-  color: var(--text-light);
-  transition: background-color var(--transition-speed), color var(--transition-speed);
-}
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--background-dark);
-    color: var(--text-light);
-  }
-}
-
-/* Utility classes */
-.hidden {
-  display: none !important;
-}
-
-/* Styles for the root div */
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 10px;
-}
-
-/* Button styling */
-.button {
-  background-color: var(--secondary-color);
-  padding: 10px 20px;
-  border: none;
-  border-radius: var(--border-radius);
-  color: var(--text-light);
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color var(--transition-speed);
-}
-
-.button:hover {
-  background-color: #27ae60;
-}
-
-/* Form styles */
-form {
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  border: 1px solid var(--text-light);
-  border-radius: var(--border-radius);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-input, button {
-  width: 100%;
-  margin: 5px 0;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--text-dark);
-}
-
-/* Links */
-a {
-  color: var(--text-light);
-  text-decoration: none;
-  transition: color var(--transition-speed);
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
+    @media (max-width: 640px) {
+      .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+    
