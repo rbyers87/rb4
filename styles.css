@@ -1,13 +1,13 @@
-/* Light Mode (default) */
+/* Light Mode (Default) */
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ffffff; /* Light background */
+  color: #000000;           /* Dark text */
 }
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000000; /* Dark background */
+    color: #ffffff;           /* Light text */
   }
 }
