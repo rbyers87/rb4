@@ -1,13 +1,12 @@
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('app-cache').then((cache) => {
+    caches.open('pwa-cache').then((cache) => {
       return cache.addAll([
         '/',
         '/index.html',
         '/styles.css',
-        '/script.js',
-        '/icons/icon-192x192.png',
-        '/icons/icon-512x512.png'
+        '/src/main.tsx',
+        '/icons/android-icon-192x192.png',
       ]);
     })
   );
