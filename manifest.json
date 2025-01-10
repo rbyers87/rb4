@@ -2,7 +2,7 @@
   "name": "Workout Tracker",
   "short_name": "Web App",
   "description": "Description of your app",
-  "start_url": "http://www.https://workout-2025.netlify.app/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
