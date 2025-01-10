@@ -48,5 +48,10 @@ document.body.classList. remove ('dark-mode');
 -}
 -
 -// Initial check
+
+-applyDarkMode () ;
+ー
+-// Listen for system preference changes
+-window.matchMedia ('(prefers-color-scheme: dark) ').addEventListener ('change', applyDarkMode);
   </body>
 </html>
